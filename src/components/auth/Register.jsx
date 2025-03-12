@@ -30,7 +30,7 @@ const Register = () => {
               isActive === "user" ? "bg-[#12A89D]" : "bg-gray-200"
             }`}
           >
-            <h1 className="text-lg text-white font-semibold">USER ACCOUNT</h1>
+            <h1 className="text-base lg:text-lg text-white font-semibold">USER ACCOUNT</h1>
           </div>
 
           {/* BUSINESS ACCOUNT */}
@@ -40,7 +40,7 @@ const Register = () => {
               isActive === "business" ? "bg-[#12A89D]" : "bg-gray-200"
             }`}
           >
-            <h1 className="text-lg text-white font-semibold">
+            <h1 className="text-base lg:text-lg text-white font-semibold">
               BUSINESS ACCOUNT
             </h1>
           </div>
