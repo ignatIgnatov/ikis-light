@@ -27,15 +27,15 @@ const BannerAd = ({ message, buttonText, buttonLink }) => {
 
   return (
     <motion.div
-      className="fixed flex flex-col gap-2 mx-6 justify-center items-center top-36 right-6 h-30 w-1/2 bg-red-500/50 text-white text-center py-4 z-50 rounded-md shadow-xl"
+      className="fixed flex flex-col gap-4 justify-center items-center top-20 right-4 sm:top-24 sm:right-8 md:top-32 md:right-12 lg:top-36 lg:right-16 xl:top-40 xl:right-20 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-lg bg-red-500/80 text-white text-center p-4 sm:p-6 rounded-lg shadow-2xl z-50"
       initial={{ x: "50vh", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: "tween", stiffness: 50, damping: 25, duration: 0.8 }}
     >
-      <p>{message}</p>
+      <p className="text-sm sm:text-base md:text-lg font-medium">{message}</p>
       <Link
         to={buttonLink}
-        className="bg-transparent border border-white text-white font-bold py-2 px-4 rounded-md transition duration-300 hover:bg-white hover:text-red-600"
+        className="bg-transparent border border-white text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-white hover:text-red-600"
       >
         {buttonText}
       </Link>
@@ -369,10 +369,10 @@ const Home = () => {
           dynamicGradient={true}
         />
 
-        {/* <BannerWithSubBanners mainBanner={mainBanner} subBanners={subBanners} /> */}
+        <BannerWithSubBanners mainBanner={mainBanner} subBanners={subBanners} />
       </section>
 
-      <div className="fixed left-[50%] bottom-10 flex flex-col gap-4 translate-x-[-50%]">
+      {/* <div className="fixed left-[50%] bottom-10 flex flex-col gap-4 translate-x-[-50%]">
         <button
           onClick={() => handleScroll("up")}
           className="p-4 rounded-full bg-transparent text-white"
@@ -386,7 +386,7 @@ const Home = () => {
         >
           <HiChevronDown className="text-6xl text-purple-600 hover:text-purple-800" />
         </button>
-      </div>
+      </div> */}
 
       <div>
         <Footer />
