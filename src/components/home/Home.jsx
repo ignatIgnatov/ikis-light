@@ -344,7 +344,7 @@ const Home = () => {
         ))}
       </section>
 
-      <section className="mt-16">
+      <section>
         <div className="flex flex-col md:flex-row">
           {halfHeightBanners.map((hero, index) => (
             <HeroSection key={index} {...hero} halfHeight />
