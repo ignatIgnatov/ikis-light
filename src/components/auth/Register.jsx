@@ -8,9 +8,15 @@ import {
 import InputComponent from "../formElements/InputComponent";
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaCheckSquare, FaRegSquare } from "react-icons/fa";
 
 const Register = () => {
   const [isActive, setIsActive] = useState("user");
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(!isChecked);
+  };
   return (
     <div className="mt-32 px-2 flex flex-col justify-center items-center">
       <div className="w-full flex flex-col justify-center items-center gap-6">
@@ -107,7 +113,22 @@ const Register = () => {
           </div>
         )}
 
-        <div className="flex flex-col lg:w-2/3 lg:flex-row justify-end items-center w-full">
+        <div className="flex lg:flex-row flex-col gap-2 lg:gap-0 justify-between items-center lg:w-2/3 w-full">
+          <div className="flex items-center gap-2">
+            <div
+              onClick={handleCheckboxChange}
+              style={{
+                cursor: "pointer",
+              }}
+            >
+              {isChecked ? (
+                <FaCheckSquare size={24} color="#12A89D" />
+              ) : (
+                <FaRegSquare size={24} color="#999" />
+              )}
+            </div>
+            <label>I agree to the terms and conditions</label>
+          </div>
           <div>
             <span className="text-sm">You already have an account?</span>{" "}
             <Link
