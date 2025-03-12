@@ -18,7 +18,7 @@ const MuliitemCarousel = () => {
   };
 
   return (
-    <div className="my-8 px-2 h-[20rem]">
+    <div className="my-8 px-2 h-[16rem]">
       <Slider {...settings}>
         {topMeels.map((item) => (
           <div className="px-1">
