@@ -18,10 +18,12 @@ const MuliitemCarousel = () => {
   };
 
   return (
-    <div className="mt-6 px-2 h-80">
+    <div className="my-8 px-2 h-[20rem]">
       <Slider {...settings}>
         {topMeels.map((item) => (
-          <CarouselItem image={item.image} title={item.title} />
+          <div className="px-1">
+            <CarouselItem image={item.image} title={item.title} />
+          </div>
         ))}
       </Slider>
     </div>
