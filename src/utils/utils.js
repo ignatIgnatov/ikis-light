@@ -153,3 +153,50 @@ export const topMeels = [
     title: "Lamp",
   },
 ];
+
+export const luni = [
+  {
+    image: "https://store.ikis-light.com/13565/acb-paul-a357810b.jpg",
+    title: "Lamp",
+  },
+
+  {
+    image: "https://store.ikis-light.com/13599/acb-san-p36791b.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/13666/acb-tango-e376820b.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/13709/acb-waka-p37252b.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/13712/acb-winka-p35571b.jpg",
+    title: "Lamp",
+  },
+];
+
+export const pendeli = [
+  {
+    image: "https://store.ikis-light.com/12468/acb-aliso-c3742220n.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/12509/acb-aspen-c39164bli.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/12513/acb-aspen-c39166veli.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/12533/acb-bauhaus-c39176arli.jpg",
+    title: "Lamp",
+  },
+  {
+    image: "https://store.ikis-light.com/12538/acb-bellona-c371151n.jpg",
+    title: "Lamp",
+  },
+];

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Footer from "../footer/Footer";
 import MuliitemCarousel from "../elements/MultiItemCarousel";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
+import { topMeels } from "../../utils/utils";
 
 const BannerAd = ({ message, buttonText, buttonLink }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -331,7 +332,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full mt-28">
+    <div className="w-full mt-4">
       <BannerAd
         message="Не изпускайте специалните ни предложения! Само за ограничено време."
         buttonText="Виж офертите"
@@ -351,7 +352,7 @@ const Home = () => {
           ))}
         </div>
 
-        <MuliitemCarousel />
+        <MuliitemCarousel topMeels={topMeels} />
       </section>
 
       {/* New Dynamic Banner Sections */}
