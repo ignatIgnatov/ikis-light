@@ -74,19 +74,39 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="mt-2 px-6 rounded-md absolute z-50 top-20 left-0 w-[50%] bg-blue-100 flex flex-col items-start py-4 shadow-lg md:hidden">
-          <Link to={"/"} className="text-gray-600 font-semibold py-2">
+          <Link
+            to={"/"}
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 font-semibold py-2"
+          >
             Осветителни тела
           </Link>
-          <Link to={"/"} className="text-gray-600 font-semibold py-2">
+          <Link
+            to={"/"}
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 font-semibold py-2"
+          >
             Light Lab
           </Link>
-          <Link to={"/"} className="text-gray-600 font-semibold py-2">
+          <Link
+            to={"/"}
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 font-semibold py-2"
+          >
             За контакти
           </Link>
-          <Link to={"/login"} className="text-gray-600 font-semibold py-2">
+          <Link
+            to={"/login"}
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 font-semibold py-2"
+          >
             Sign In
           </Link>
-          <Link to={"/register"} className="text-gray-600 font-semibold py-2">
+          <Link
+            to={"/register"}
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 font-semibold py-2"
+          >
             Register
           </Link>
         </div>

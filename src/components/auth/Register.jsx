@@ -5,6 +5,7 @@ import {
 } from "../../utils/utils";
 import InputComponent from "../formElements/InputComponent";
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -52,8 +53,20 @@ const Register = () => {
           </div>
         </div>
 
+        <div className="flex flex-col lg:w-2/3 lg:flex-row justify-end items-center w-full">
+          <div>
+            <span className="text-sm">You already have an account?</span>{" "}
+            <Link
+              className="font-semibold text-sm hover:text-red-800"
+              to={"/login"}
+            >
+              Sign in
+            </Link>
+          </div>
+        </div>
+
         <button
-          className=" mb-10 inline-flex w-2/3 items-center justify-center bg-[#12A89D] px-4 py-2 text-lg text-white font-medium rounded-md transition-transform duration-500 transform hover:scale-105 hover:shadow-md"
+          className="mb-10 inline-flex w-2/3 items-center justify-center bg-[#12A89D] px-4 py-2 text-lg text-white font-medium rounded-md transition-transform duration-500 transform hover:scale-105 hover:shadow-md"
           onClick={() => console.log("Register")}
         >
           Register
