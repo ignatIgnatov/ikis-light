@@ -28,7 +28,7 @@ const BannerAd = ({ message, buttonText, buttonLink }) => {
 
   return (
     <motion.div
-      className="fixed flex flex-col gap-4 justify-center items-center top-20 right-4 sm:top-24 sm:right-8 md:top-32 md:right-12 lg:top-36 lg:right-16 xl:top-40 xl:right-20 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-lg bg-red-500/80 text-white text-center p-4 sm:p-6 rounded-lg shadow-2xl z-50"
+      className="fixed flex flex-col gap-4 justify-center items-center top-20 right-4 sm:top-24 sm:right-8 md:top-32 md:right-12 lg:top-36 lg:right-16 xl:top-42 xl:right-20 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-lg bg-red-500/80 text-white text-center p-4 sm:p-6 rounded-lg shadow-2xl z-50"
       initial={{ x: "50vh", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: "tween", stiffness: 50, damping: 25, duration: 0.8 }}
