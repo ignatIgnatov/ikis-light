@@ -10,8 +10,8 @@ const InputComponent = ({
   max,
 }) => {
   return (
-    <div className="relative w-[30vw]">
-      <p className="absolute pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 bg-gray-100">
+    <div className="relative lg:w-[30vw] w-full">
+      <p className="absolute pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-sm font-medium text-gray-600 bg-gray-100">
         {label}
       </p>
       <div className="flex items-center border placeholder-gray-400 focus-within:border-[#12A89D] w-full text-base bg-transparent border-gray-300 rounded-md">

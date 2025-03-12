@@ -29,7 +29,7 @@ const Login = () => {
 
         {/* Login form */}
         <div className="w-full p-8 shadow-lg rounded-lg bg-gray-100">
-          <form className="flex flex-col gap-6">
+          <form className="w-full flex flex-col justify-center items-center gap-6">
             {loginFormControl.map((item) => (
               <InputComponent
                 key={item.label}

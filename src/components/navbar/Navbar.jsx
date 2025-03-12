@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`h-20 border border-gray-200 shadow-lg rounded-md flex justify-between items-center mx-2 px-6 mt-2 mb-10 bg-blue-100 fixed top-0 left-0 right-0 transition-transform duration-500 ease-in-out ${
+      className={`h-20 border border-gray-200 shadow-lg rounded-md flex justify-between items-center mx-2 px-6 mt-2 mb-10 bg-blue-100 fixed top-0 left-0 right-0 z-50 transition-transform duration-500 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -73,7 +73,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="mx-2 mt-2 px-6 rounded-md absolute top-20 left-0 w-[50%] bg-blue-100 flex flex-col items-start py-4 shadow-lg md:hidden">
+        <div className="mt-2 px-6 rounded-md absolute z-50 top-20 left-0 w-[50%] bg-blue-100 flex flex-col items-start py-4 shadow-lg md:hidden">
           <Link to={"/"} className="text-gray-600 font-semibold py-2">
             Осветителни тела
           </Link>
