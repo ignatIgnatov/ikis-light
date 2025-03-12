@@ -16,27 +16,25 @@ const Register = () => {
       <div className="w-full flex flex-col justify-center items-center gap-6">
         <h1 className="text-2xl text-gray-600 font-semibold">REGISTRATION</h1>
 
-        <div className="lg:w-2/3 w-full flex lg:flex-row justify-center items-center gap-4 p-4 shadow-lg rounded-md bg-gray-100">
+        <div className="lg:w-2/3 w-full flex lg:flex-row justify-center items-center gap-4 p-2 shadow-lg rounded-md bg-gray-100">
           {/* USER ACCOUNT */}
           <div
             onClick={() => setIsActive("user")}
-            className={`p-4 rounded-md shadow-lg cursor-pointer ${
+            className={`p-2 px-6 rounded-md shadow-lg cursor-pointer ${
               isActive === "user" ? "bg-[#12A89D]" : "bg-gray-200"
             }`}
           >
-            <h1 className="lg:text-2xl text-lg text-white font-semibold">
-              USER ACCOUNT
-            </h1>
+            <h1 className="text-lg text-white font-semibold">USER ACCOUNT</h1>
           </div>
 
           {/* BUSINESS ACCOUNT */}
           <div
             onClick={() => setIsActive("business")}
-            className={`p-4 rounded-md shadow-lg cursor-pointer ${
+            className={`p-2 px-6 rounded-md shadow-lg cursor-pointer ${
               isActive === "business" ? "bg-[#12A89D]" : "bg-gray-200"
             }`}
           >
-            <h1 className="lg:text-2xl text-lg text-white font-semibold">
+            <h1 className="text-lg text-white font-semibold">
               BUSINESS ACCOUNT
             </h1>
           </div>
