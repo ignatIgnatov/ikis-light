@@ -12,7 +12,7 @@ const Login = () => {
     setIsChecked(!isChecked);
   };
   return (
-    <div className="mt-10 px-4 flex flex-col justify-center items-center min-h-screen">
+    <div className="mt-32 px-4 flex flex-col justify-center items-center min-h-screen">
       <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-8">
         <h1 className="text-3xl text-gray-700 font-bold mb-6">Sign In</h1>
 
@@ -35,7 +35,7 @@ const Login = () => {
         </div>
 
         {/* Login form */}
-        <div className="w-full p-8 shadow-lg rounded-lg bg-gray-100">
+        <div className="w-full mb-10 p-8 shadow-lg rounded-lg bg-gray-100">
           <form className="w-full flex flex-col justify-center items-center gap-6">
             {loginFormControl.map((item) => (
               <InputComponent

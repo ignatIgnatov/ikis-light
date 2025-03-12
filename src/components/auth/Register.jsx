@@ -13,20 +13,20 @@ const Register = () => {
       <div className="w-full flex flex-col justify-center items-center gap-6">
         <h1 className="text-2xl text-gray-600 font-semibold">REGISTRATION</h1>
 
-        <div className="lg:w-2/3 w-full flex flex-col justify-center items-center gap-4 p-4 shadow-lg rounded-md bg-gray-100">
+        <div className="lg:w-2/3 w-full flex flex-col lg:flex-row justify-center items-center gap-4 p-4 shadow-lg rounded-md bg-gray-100">
           <button
-            className="flex font-medium items-center lg:w-2/3 w-full justify-center gap-3 bg-white border border-gray-300 px-4 py-2 text-sm lg:text-lg text-gray-700 rounded-md transition-transform duration-500 transform hover:scale-105 hover:shadow-md"
-            onClick={() => console.log("Register with Google")}
+            className="flex items-center w-full sm:w-1/2 justify-center gap-3 bg-white border border-gray-300 px-4 py-2 text-base sm:text-lg text-gray-700 font-medium rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-md"
+            onClick={() => console.log("Sign in with Google")}
           >
             <FaGoogle size={20} color="#DB4437" />
-            Register with Google
+            Sign in with Google
           </button>
           <button
-            className="flex font-medium items-center lg:w-2/3 w-full justify-center gap-3 bg-white border border-gray-300 px-4 py-2 text-sm lg:text-lg text-gray-700 rounded-md transition-transform duration-500 transform hover:scale-105 hover:shadow-md"
-            onClick={() => console.log("Register with Facebook")}
+            className="flex items-center w-full sm:w-1/2 justify-center gap-3 bg-white border border-gray-300 px-4 py-2 text-base sm:text-lg text-gray-700 font-medium rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-md"
+            onClick={() => console.log("Sign in with Facebook")}
           >
             <FaFacebookF size={20} color="#1877F2" />
-            Register with Facebook
+            Sign in with Facebook
           </button>
         </div>
 
